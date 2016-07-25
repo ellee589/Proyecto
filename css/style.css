@@ -1,0 +1,10 @@
+body {  padding-top: 50px;}
+.mainCanvas {padding: 40px 15px;}
+.load-msg{margin: 20px auto 0; display: table; padding: 6px 10px 6px 0; background-color: #fcfcfc; border-radius: 4px;}
+.load-msg img{float: left; margin: 0 7px; width: 16px;}
+.ErrorMessage {color: red;}
+.OrangeBackground {background-color: #eb9316}
+.BlueBackground {background-color: #2a6496}
+.Clickable:hover {cursor: pointer;}
+.Bold{font-weight: bold}
+.Centered{text-align: center}
