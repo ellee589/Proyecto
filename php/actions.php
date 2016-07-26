@@ -6,6 +6,9 @@
 $IndexController=new IndexController();
 $APP_ACTIONS["index"]=$IndexController;
 
+$UniversityController=new UniversityController();
+$APP_ACTIONS["requestData"]=$UniversityController;
+
 // Acciones para inicio/cierre de Sesion
 $LoginController=new LoginController();
 $APP_ACTIONS["checkAuth"]=$LoginController;

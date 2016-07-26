@@ -1,7 +1,7 @@
 <?php
 
 $BaseDir=dirname(__FILE__);
-$ClassPath="{$BaseDir}/classes";
+$ClassPath="{$BaseDir}/php/classes";
 
 
 foreach(explode(PATH_SEPARATOR,$ClassPath) as $Path){
@@ -20,5 +20,7 @@ function project_autoloader($Class){
     include_once "{$Class}.php";
 }
 spl_autoload_register('project_autoloader');
-
+include_once "{$BaseDir}/php/classes/controller/UniversityController.php";
+/*
 include_once "{$BaseDir}/libraries/PHPExcel/Classes/PHPExcel.php";
+*/

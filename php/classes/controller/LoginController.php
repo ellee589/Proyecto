@@ -6,7 +6,7 @@ class LoginController extends Controller {
         $this->sendView("html/views/login/loginView.php");
     }
     
-    public function LoginAction(){
+    public function loginAction(){
         $Params=$this->getJsonRequest();
         $Usuario=UserDAO::getUserLogon($Params->User, $Params->Password);
         if($Usuario!==NULL){
