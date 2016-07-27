@@ -3,11 +3,11 @@
 // The actions File used to determine the controller and 
 // the method to execute
 
+$UniversityController=new UniversityController();
+$APP_ACTIONS["university"]=$UniversityController;
+
 $IndexController=new IndexController();
 $APP_ACTIONS["index"]=$IndexController;
-
-$UniversityController=new UniversityController();
-$APP_ACTIONS["requestData"]=$UniversityController;
 
 // Acciones para inicio/cierre de Sesion
 $LoginController=new LoginController();

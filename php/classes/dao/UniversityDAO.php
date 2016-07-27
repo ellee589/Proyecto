@@ -16,8 +16,7 @@ class UniversityDAO {
 
     public static function getUniversities() {
         $Universities=array();
-        $Query="select *
-            from Universidades";
+        $Query="select * from Universidades";
         $DB=DB::getInstance();
         $Result=$DB->Select($Query);
         $DB->Close();

@@ -126,8 +126,15 @@ class Controller {
     }
     
     public function proccessRequest(){
+        /*
         $Action=$this->getParam("action");
         $Method=$Action."Action";
         $this->$Method();
+        */
+        /*
+        $this->universityAction();
+        $Method="universityAction";
+        $this->$Method();
+        */
     }
 }

@@ -175,3 +175,10 @@
             <p class="text-center">Copyright &copy; Programación Web II 2016</p>
         </div>
     </footer>
+
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>

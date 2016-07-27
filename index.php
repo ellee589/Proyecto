@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
+        <base href="/">
 
         <title>Universidades</title>
 
@@ -30,6 +31,8 @@
         <![endif]-->
     </head>
 
+    <body>
+<!--
 
     <body ng-controller="RootController">
 
@@ -43,9 +46,14 @@
             <div ng-view>
             </div>
         </div>
+        <div ng-if="!SessionUser.UserId">
+            <div ng-view>
 
-        <div ng-view ng-if="!SessionUser.UserId">
+            </div>
         </div>
+-->
+        <div ng-view></div>
+
         <script src="js/jquery/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
         <script src="js/angular/angular.min.js"></script>
@@ -54,13 +62,6 @@
         <script src="js/app.min.js"></script>
         <script src="js/services.min.js"></script>
         <script src="js/controllers.min.js"></script>
-
-        <script>
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-        </script>
     </body>
 </html>
 

@@ -1,5 +1,5 @@
-<IfModule mod_rewrite.c>  
-    RewriteEngine on  
+<IfModule mod_rewrite.c>
+    RewriteEngine on
     #RewriteRule ([a-zA-Z]+)\.do\?([.]+) dispatcher.php?action=$1?$2
     RewriteRule ([a-zA-Z]+)\.do dispatcher.php?action=$1
 </IfModule>

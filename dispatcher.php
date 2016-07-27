@@ -12,6 +12,7 @@ global $APP_ACTIONS;
 session_start();
 
 $RequestedAction=filter_input(INPUT_POST, "action");
+
 if(!$RequestedAction){
     $RequestedAction=filter_input(INPUT_GET, "action");
 }

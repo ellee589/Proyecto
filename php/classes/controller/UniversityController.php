@@ -7,9 +7,8 @@
  */
 class UniversityController extends Controller
 {
-    public function requestDataAction(){
-        /*$Request=$this->getJsonRequest()*/
+    public function universityAction(){
         $Universities= UniversityDAO::getUniversities();
-        $this->sendCompressedJson($Universities);
+        $this->sendJson($Universities);
     }
 }
